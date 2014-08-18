@@ -1,0 +1,8 @@
+/.project
+.idea
+out
+bean-common/target
+cyd-core/target
+cyd-core/.idea
+bean-web/target
+bean-core/.idea

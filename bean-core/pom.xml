@@ -10,8 +10,8 @@
     <version>1.0</version>
     <modules>
         <module>../bean-common</module>
-        <module>../bean-server</module>
         <module>../bean-web</module>
+        <module>../cyd-core</module>
     </modules>
 
 
