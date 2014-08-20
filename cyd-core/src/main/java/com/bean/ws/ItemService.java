@@ -1,7 +1,7 @@
 package com.bean.ws;
 
-import com.bean.model.data.user.UserVO;
-import com.bean.model.proxy.UserProxy;
+import com.bean.model.data.item.ItemVO;
+import com.bean.model.proxy.ItemProxy;
 import com.bean.util.ServiceUtil;
 
 import javax.ws.rs.Consumes;
@@ -15,19 +15,19 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by Daniel on 14-8-18.
+ * Created by Daniel on 14-8-20.
  */
-@Path("/user")
-public class UserService {
+@Path("/item")
+public class ItemService {
     @Path("/all")
     @GET
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getAllUsers() throws Exception{
+    public Response getAllItems() throws Exception{
 
-        List<UserVO> allUser = UserProxy.getAllUsers();
+        List<ItemVO> allItems = ItemProxy.getAllItems();
         Map<String, List> result = new HashMap<String, List>();
-        result.put("users", allUser);
+        result.put("items", allItems);
         return ServiceUtil.buildResponse(result);
     }
 }

@@ -61,32 +61,33 @@
 
                 </ul>
             </div>
-            <div class="tab-content col-md-12 col-sm-12">
+            <div class="col-md-12 col-sm-12">
                 <ul class="nav nav-tabs" role="tablist" id="itemList">
                     <li role="presentation" class="active"><a href="#item" data-toggle="tab">商品</a></li>
                     <li role="presentation"><a href="#category" data-toggle="tab">类别</a></li>
                 </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="item">
+                        <table id="table_all_items" cellpadding="0" cellspacing="0" border="0" class="datatable table table-striped table-bordered table-hover dataTable">
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>商品名</th>
+                                <th>商品描述</th>
+                                <th>卖家</th>
+                                <th>起始价</th>
+                                <th>最低价</th>
+                                <th>创建时间</th>
+                                <th class="hidden"></th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="category">类别</div>
+                </div>
             </div>
 
-            <div class="tab-content">
-                <div class="tab-pane active" id="item">
-                    <table id="table_all_items" cellpadding="0" cellspacing="0" border="0" class="datatable table table-striped table-bordered table-hover dataTable">
-                        <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>商品名</th>
-                            <th>商品描述</th>
-                            <th>卖家</th>
-                            <th>起始价</th>
-                            <th>最低价</th>
-                            <th>创建时间</th>
-                            <th class="hidden"></th>
-                        </tr>
-                        </thead>
-                    </table>
-                </div>
-                <div class="tab-pane" id="category">类别</div>
-            </div>
+
 
         </div>
     </div>
@@ -99,6 +100,7 @@
 <script src="http://v3.bootcss.com/assets/js/docs.min.js"></script>
 <script src="../../js/jquery.dataTables.js"></script>
 <script src="../../js/reloadAjax.js"></script>
+<script src="loadItemList.js"></script>
 <script>
     $(function () {
         $('#itemList a:first').tab('show');//初始化显示哪个tab
