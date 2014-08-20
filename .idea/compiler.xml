@@ -28,9 +28,12 @@
         <module name="bean-common" />
         <module name="bean-server" />
         <module name="bean-web" />
+        <module name="cyd-core" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.7" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="cyd-core" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

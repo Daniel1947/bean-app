@@ -4,8 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/bean-common/bean-common.iml" filepath="$PROJECT_DIR$/bean-common/bean-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/bean-core/bean-core.iml" filepath="$PROJECT_DIR$/bean-core/bean-core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bean-server/bean-server.iml" filepath="$PROJECT_DIR$/bean-server/bean-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/bean-web/bean-web.iml" filepath="$PROJECT_DIR$/bean-web/bean-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cyd-core/cyd-core.iml" filepath="$PROJECT_DIR$/cyd-core/cyd-core.iml" />
     </modules>
   </component>
 </project>
