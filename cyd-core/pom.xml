@@ -8,7 +8,9 @@
         <relativePath>../bean-core/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <packaging>war</packaging>
+    <name>cyd-core Maven Webapp</name>
+    <url>http://maven.apache.org</url>
     <artifactId>cyd-core</artifactId>
 
 
